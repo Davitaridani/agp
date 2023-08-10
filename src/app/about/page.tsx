@@ -2,12 +2,30 @@ import React from 'react'
 import Image from 'next/image'
 import { asset_about } from "../../assets/images/";
 import { iconAbout } from "../../utils/constants";
+import cover from "../../assets/images/about/cover-about.webp";
+import "./about.module.css";
 
 const About = () => {
+
+	const styling = {
+		backgroundImage: `url('${cover}')`,
+		width: "100%",
+		height: "100%"
+	}
+
 	return (
 		<>
-			<section className='bg-darkBlue '>
-				<div className="container text-white ">
+
+			<section >
+				<div className="container">
+
+					heroo
+
+				</div>
+			</section >
+
+			<section className='bg-darkBlue'>
+				<div className="container text-white">
 					<div className="flex flex-row justify-center gap-12 py-20">
 						<div className="basis-2/5">
 							<div className="">
@@ -43,12 +61,22 @@ const About = () => {
 					<div className="items-center">
 						<h5>AGP at a glance</h5>
 						<div className="flex flex-row">
-							{
+							{/* {
 								iconAbout.map((item, index) => (
 									<div className="basis-1/3" key={index}>
 										<Image src={item.icon} alt='icon' className='mx-auto' />
 										<h5>{item.count}</h5>
 										<p>{item.text}</p>
+									</div>
+								))
+							} */}
+
+							{
+								iconAbout.map((item, index) => (
+									<div className="bais" key={index}>
+										<Image src={item.icon} alt='images' />
+										<h5>{item.text}</h5>
+										<p>{item.count}</p>
 									</div>
 								))
 							}
@@ -57,7 +85,7 @@ const About = () => {
 				</div>
 			</section>
 
-			<section className=''>
+			<section className='8'>
 				<div className="container">
 
 				</div>

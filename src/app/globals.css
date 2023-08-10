@@ -13,6 +13,11 @@
   margin: 0 auto;
 }
 
+.container-content2 {
+  max-width: 1595px;
+  margin-left: auto;
+}
+
 @layer base {
   h1 {
     @apply text-3xl md:text-4xl lg:text-5xl;
@@ -29,6 +34,10 @@
 
 .items-center {
   @apply w-auto md:w-3/5 mx-auto text-center;
+}
+
+.flex-items-center {
+  @apply flex items-center justify-center;
 }
 
 .items-row {
