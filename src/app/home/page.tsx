@@ -12,11 +12,11 @@ const Home = () => {
 			<section className={`${styles.bg_hero} flex`}>
 				<div className="container flex-items-center">
 					<div className="">
-						<p className="uppercase">
+						<p className="uppercase text-darkBlue">
 							agp indonesia:
 						</p>
-						<h1 className="capitalize">Surabaya's Reliable Source
-							<span className="block">For Technical Industrial Supplies</span>
+						<h1 className="capitalize text-darkBlue">Surabaya's Reliable Source
+							<span className="block text-red">For Technical Industrial Supplies</span>
 						</h1>
 						<p className="uppercase">We serve throughout Indonesia</p>
 					</div>
