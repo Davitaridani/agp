@@ -20,19 +20,23 @@
 
 @layer base {
   h1 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    @apply text-3xl md:text-4xl lg:text-5xl tracking-wide;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl lg:text-4xl;
+    @apply text-2xl md:text-3xl lg:text-4xl tracking-wide;
   }
 
   p {
-    @apply text-base xl:text-lg;
+    @apply text-base xl:text-lg tracking-wide;
+  }
+
+  section {
+    @apply lg:pt-16 pt-12;
   }
 }
 
-.items-center {
+.items__center {
   @apply w-auto md:w-3/5 mx-auto text-center;
 }
 

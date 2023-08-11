@@ -5,19 +5,20 @@ import { IoIosListBox } from "react-icons/io";
 
 export const cardHome = [
   { imgUrl: asset_home.produk_1, text: "valves" },
-  { imgUrl: asset_home.produk_2, text: "pipe" },
-  { imgUrl: asset_home.produk_3, text: "fittings" },
-  { imgUrl: asset_home.produk_4, text: "flanges" },
-  { imgUrl: asset_home.produk_5, text: "asahi" },
   { imgUrl: asset_home.produk_6, text: "pippe" },
-  { imgUrl: asset_home.produk_7, text: "pippe" },
+  { imgUrl: asset_home.produk_14, text: "pippe" },
   { imgUrl: asset_home.produk_8, text: "pippe" },
+  { imgUrl: asset_home.produk_13, text: "pippe" },
+
+  { imgUrl: asset_home.produk_5, text: "asahi" },
+  { imgUrl: asset_home.produk_7, text: "pippe" },
+  { imgUrl: asset_home.produk_3, text: "fittings" },
   { imgUrl: asset_home.produk_9, text: "pippe" },
+  { imgUrl: asset_home.produk_4, text: "flanges" },
+  { imgUrl: asset_home.produk_2, text: "pipe" },
+  { imgUrl: asset_home.produk_12, text: "pippe" },
   { imgUrl: asset_home.produk_10, text: "pippe" },
   { imgUrl: asset_home.produk_11, text: "pippe" },
-  { imgUrl: asset_home.produk_12, text: "pippe" },
-  { imgUrl: asset_home.produk_13, text: "pippe" },
-  { imgUrl: asset_home.produk_14, text: "pippe" },
   { imgUrl: asset_home.produk_15, text: "View all" },
 ];
 
