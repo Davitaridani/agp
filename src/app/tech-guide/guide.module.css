@@ -1,0 +1,5 @@
+.bg_hero {
+  background: url("../../assets/images/guide/bg-cover.webp") center no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
