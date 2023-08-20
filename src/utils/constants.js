@@ -1,4 +1,4 @@
-import { asset_home } from "../assets/images";
+import { asset_home, asset_product } from "../assets/images";
 import { asset_about } from "../assets/images";
 
 import { IoIosListBox } from "react-icons/io";
@@ -22,15 +22,6 @@ export const cardHome = [
   { imgUrl: asset_home.produk_15, text: "View all" },
 ];
 
-export const productAgp = [
-  { icon: <IoIosListBox />, text: "PIPE STANDARD" },
-  { icon: <IoIosListBox />, text: "FITTINGS STANDARD" },
-  { icon: <IoIosListBox />, text: "SNI STEEL" },
-  { icon: <IoIosListBox />, text: "STEEL FOR MACHINE STRUCTURAL" },
-  { icon: <IoIosListBox />, text: "ASAHI" },
-  { icon: <IoIosListBox />, text: "RFQ GUIDE" },
-];
-
 export const iconAbout = [
   {
     icon: asset_about.icon_1,
@@ -46,5 +37,82 @@ export const iconAbout = [
     icon: asset_about.icon_3,
     count: "8000+",
     text: "Satisfied customers",
+  },
+];
+
+export const productAgp = [
+  {
+    id: 1,
+    category: "pipe",
+    icon: <IoIosListBox />,
+    text: "PIPE STANDARD",
+  },
+  {
+    id: 2,
+    category: "Fittings",
+    icon: <IoIosListBox />,
+    text: "FITTINGS STANDARD",
+  },
+  {
+    id: 3,
+    category: "Sni",
+    icon: <IoIosListBox />,
+    text: "SNI STEEL",
+  },
+  {
+    id: 4,
+    category: "Stell",
+    icon: <IoIosListBox />,
+    text: "STEEL FOR MACHINE STRUCTURAL",
+  },
+  {
+    id: 5,
+    category: "Asahi",
+    icon: <IoIosListBox />,
+    text: "ASAHI",
+  },
+  {
+    id: 6,
+    category: "Rfq",
+    icon: <IoIosListBox />,
+    text: "RFQ GUIDE",
+  },
+];
+
+export const dataProducts = [
+  {
+    category: "Pipe",
+    product: [
+      {
+        id: 1,
+        imgUrl: asset_product.product_1,
+        title: "Pipe (Sch638 - Sch645)",
+      },
+      {
+        id: 2,
+        imgUrl: asset_product.product_1,
+        title: "Pipe (Sch638 - Sch645)",
+      },
+      {
+        id: 3,
+        imgUrl: asset_product.product_1,
+        title: "Pipe (Sch638 - Sch645)",
+      },
+      {
+        id: 4,
+        imgUrl: asset_product.product_1,
+        title: "Pipe (Sch638 - Sch645)",
+      },
+      {
+        id: 5,
+        imgUrl: asset_product.product_1,
+        title: "Pipe (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Pipe (Sch638 - Sch645)",
+      },
+    ],
   },
 ];

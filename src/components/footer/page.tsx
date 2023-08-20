@@ -1,22 +1,89 @@
 import { asset_home } from "../../assets/images";
 import Image from "next/image";
 import Link from "next/link";
-import { FiPhoneCall } from "react-icons/fi";
-import { MdOutlineMail } from "react-icons/md";
+import { BiSolidPhoneCall, BiLogoFacebook } from "react-icons/bi";
+import { MdEmail, MdLocationPin } from "react-icons/md";
+import { GrInstagram, GrLinkedinOption } from "react-icons/gr";
 
 const Footer = () => {
+
+	const dataLink = [
+		{
+			title: "Pages",
+			itemLinks: [
+				{ link: "Home" },
+				{ link: "About" },
+				{ link: "Product" },
+				{ link: "Guide" }
+			]
+		},
+		{
+			title: "About",
+			itemLinks: [
+				{ link: "Services" },
+				{ link: "Solution" },
+				{ link: "Team" }
+			]
+		},
+	]
 
 	return (
 		<footer className="bg-navy">
 			<div className="container text-gray">
-				<div className="flex-row">
-					<div className="basis-1/3">
-						<Image src={asset_home.logo} alt="logo footer" />
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aperiam commodi, id eos optio pariatur error.</p>
-						<Link href={"/"} className="flex-center mx-1"><span><FiPhoneCall /></span>+62 8344-444-443</Link>
-						<Link href={"/"} className="flex-center justify-start"><span><MdOutlineMail /></span>example@gmail.com</Link>
+				<div className="flex flex-row pt-20 pb-10">
+					<div className="basis-1/4">
+						<Image src={asset_home.logo} alt="logo footer" className="w-12 h-12 mb-2" />
+						<p className="text-[15px] pe-8 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt maxime consequatur libero minima!</p>
+						<div className="flex_center gap-2 text-lg">
+							<span>
+								<BiLogoFacebook />
+							</span>
+							<span>
+								<GrInstagram />
+							</span>
+							<span>
+								<GrLinkedinOption />
+							</span>
+						</div>
+					</div>
+					{dataLink.map((item: any, i) => (
+						<div className="basis-1/4">
+							<h5 className="mb-2 text-xl text-white">{item.title}</h5>
+							<ul key={i} className="">
+								{item.itemLinks.map((item: any) => (
+									<li className="flex_center mb-2" >
+										<Link href={`#`} className="text-sm hover:underline">{item.link}</Link>
+									</li>
+								))}
+							</ul>
+						</div>
+					))}
+					<div className="basis-1/4">
+						<h5 className="mb-2 text-xl text-white">Contact</h5>
+						<ul>
+							<li className="mb-2">
+								<Link href={"#"} className="flex_center text-sm hover:underline">
+									<span className="pe-2"><MdEmail /></span>
+									example.info@email.com
+								</Link>
+							</li>
+							<li className="mb-2">
+								<Link href={"#"} className="flex_center text-sm hover:underline">
+									<span className="pe-2"><BiSolidPhoneCall /></span>
+									+62 222 212 3819
+								</Link>
+							</li>
+							<li className="mb-2">
+								<Link href={"#"} className="flex_center">
+									<span className="pe-2"><MdLocationPin /></span>
+									Jember, Indonesia
+								</Link>
+							</li>
+						</ul>
 					</div>
 				</div>
+				<hr className="my-5 text-zinc-600" />
+				<p className="text-center text-sm pb-7">Copyright © 2023 All rights reserved | This website by Ahmat Davit</p>
 			</div>
 		</footer >
 	)
