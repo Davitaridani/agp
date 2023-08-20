@@ -2,25 +2,19 @@ import React from 'react'
 import Image from 'next/image'
 import { asset_about } from "../../assets/images/";
 import { iconAbout } from "../../utils/constants";
-import cover from "../../assets/images/about/cover-about.webp";
-import "./about.module.css";
+import styling from "./about.module.css";
 
 const About = () => {
-
-	const styling = {
-		backgroundImage: `url('${cover}')`,
-		width: "100%",
-		height: "100%"
-	}
-
 	return (
 		<>
-
-			<section >
+			<section className={`${styling.bg_hero} flex items-end pb-16`} >
 				<div className="container">
-
-					heroo
-
+					<div className="text-center">
+						<p className='uppercase text-red'>About US</p>
+						<h1 className='font-bold text-darkBlue'>Customer At Surabaya & Throughout
+							<span className='block'> The Country Choose AGP,</span>
+							<span className='text-red block'>Then Remain For The Long Term </span></h1>
+					</div>
 				</div>
 			</section >
 
@@ -50,7 +44,7 @@ const About = () => {
 			</section>
 
 			<section>
-				<div className="container">
+				<div className="container_content">
 					<div className="mb-8 w-auto md:w-3/5 mx-auto text-center">
 						<h1 className='text-red leading-[1.2] font-bold mb-8'>
 							<span className='block text-darkBlue font-normal'>The Right Partner In Supplies</span>
@@ -58,36 +52,41 @@ const About = () => {
 						<p>The right partner will help you pave your way to success. As an active supplier, we are ready to be involved with your project specificators to provide the best solutions, creating new ways to make your project efficient and successful. We will come up with suggestion, detailed information on quality, product differentiation and other insighful information. We work closely with customers in Surabaya and throughout the country of Indonesia, learning the new technological advancement, understanding of the new trends to kept updated and be able to come up with comprehensive products that serve the modern industrial market.</p>
 					</div>
 
-					<div className="items-center">
+					<div className="items-center text-center">
 						<h5>AGP at a glance</h5>
-						<div className="flex flex-row">
-							{/* {
-								iconAbout.map((item, index) => (
-									<div className="basis-1/3" key={index}>
-										<Image src={item.icon} alt='icon' className='mx-auto' />
-										<h5>{item.count}</h5>
-										<p>{item.text}</p>
-									</div>
-								))
-							} */}
-
-							{
-								iconAbout.map((item, index) => (
-									<div className="bais" key={index}>
-										<Image src={item.icon} alt='images' />
+						<div className="flex flex-row ">
+							{iconAbout.map((item, index) => (
+								<div className="md:basis-2/6 basis-full flex justify-center" key={index}>
+									<div className="text-center ">
+										<Image src={item.icon} alt='images' className='mx-auto' />
 										<h5>{item.text}</h5>
 										<p>{item.count}</p>
 									</div>
-								))
-							}
+								</div>
+							))}
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section className='8'>
-				<div className="container">
+			<section className={`${styling.bg_cover_about} flex items-center`}>
+				<div className="container_content">
+					<h1 className="text-center text-white">AGP <span className='block text-red'>Vision & Mision
+					</span></h1>
 
+					<div className="items__row justify-center gap-5 text-white text-center">
+						<div className="basis-1/2 ">
+							<h5>Vision</h5>
+							<p>To become the leading company in Indonesia in the sales of pipes, valves, couplings, clutches, and related products, with a focus on offering the most comprehensive range of products and delivering the best service.</p>
+						</div>
+						<div className="md:border-r-2 border-b-2 border-white">
+
+						</div>
+						<div className="basis-1/2">
+							<h5>Vision</h5>
+							<p>To become the leading company in Indonesia in the sales of pipes, valves, couplings, clutches, and related products, with a focus on offering the most comprehensive range of products and delivering the best service.</p>
+						</div>
+					</div>
 				</div>
 			</section>
 		</>
