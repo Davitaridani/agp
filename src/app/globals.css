@@ -32,7 +32,7 @@
   }
 
   section {
-    @apply lg:pt-16 pt-12;
+    @apply lg:py-20 py-12;
   }
 }
 
