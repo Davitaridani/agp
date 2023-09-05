@@ -81,37 +81,255 @@ export const productAgp = [
 
 export const dataProducts = [
   {
-    category: "Pipe",
+    id: 1,
+    category: "pipe-standard",
+    icon: <IoIosListBox />,
+    text: "Pipe Standard",
     product: [
       {
         id: 1,
         imgUrl: asset_product.product_1,
-        title: "Pipe (Sch638 - Sch645)",
+        title: "Pipe (Sch638 - Sch6334)",
       },
       {
         id: 2,
         imgUrl: asset_product.product_1,
-        title: "Pipe (Sch638 - Sch645)",
+        title: "Pipe (Sch638 - Sch644234)",
       },
       {
         id: 3,
         imgUrl: asset_product.product_1,
-        title: "Pipe (Sch638 - Sch645)",
+        title: "Pipe (Sch638 - Sch643425)",
       },
       {
         id: 4,
         imgUrl: asset_product.product_1,
-        title: "Pipe (Sch638 - Sch645)",
+        title: "Pipe (Sch638 - Sch643245)",
       },
       {
         id: 5,
         imgUrl: asset_product.product_1,
-        title: "Pipe (Sch638 - Sch645)",
+        title: "Pipe (Sch638 - Sch633445)",
       },
       {
         id: 6,
         imgUrl: asset_product.product_1,
-        title: "Pipe (Sch638 - Sch645)",
+        title: "Pipe (Sch638 - Sch642225)",
+      },
+    ],
+  },
+  {
+    id: 2,
+    category: "fittings",
+    icon: <IoIosListBox />,
+    text: "RFQ GUIDE",
+    product: [
+      {
+        id: 1,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch111- Sch111)",
+      },
+      {
+        id: 2,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch222 - Sch645)",
+      },
+      {
+        id: 3,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch333 - Sch645)",
+      },
+      {
+        id: 4,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 5,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittingsssssss",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "steel",
+    icon: <IoIosListBox />,
+    text: "SNI Steel",
+    product: [
+      {
+        id: 1,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch111- Sch111)",
+      },
+      {
+        id: 2,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch222 - Sch645)",
+      },
+      {
+        id: 3,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch333 - Sch645)",
+      },
+      {
+        id: 4,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 5,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittingsssssss",
+      },
+    ],
+  },
+  {
+    id: 4,
+    category: "machine-structural",
+    icon: <IoIosListBox />,
+    text: "Steel for machine structural",
+    product: [
+      {
+        id: 1,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch111- Sch111)",
+      },
+      {
+        id: 2,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch222 - Sch645)",
+      },
+      {
+        id: 3,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch333 - Sch645)",
+      },
+      {
+        id: 4,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 5,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittingsssssss",
+      },
+    ],
+  },
+  {
+    id: 5,
+    category: "asahi",
+    icon: <IoIosListBox />,
+    text: "Asahi",
+    product: [
+      {
+        id: 1,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch111- Sch111)",
+      },
+      {
+        id: 2,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch222 - Sch645)",
+      },
+      {
+        id: 3,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch333 - Sch645)",
+      },
+      {
+        id: 4,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 5,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittingsssssss",
+      },
+    ],
+  },
+  {
+    id: 6,
+    category: "rfq-guide",
+    icon: <IoIosListBox />,
+    text: "Rfq Guide",
+    product: [
+      {
+        id: 1,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch111- Sch111)",
+      },
+      {
+        id: 2,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch222 - Sch645)",
+      },
+      {
+        id: 3,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch333 - Sch645)",
+      },
+      {
+        id: 4,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 5,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittings (Sch638 - Sch645)",
+      },
+      {
+        id: 6,
+        imgUrl: asset_product.product_1,
+        title: "Fittingsssssss",
       },
     ],
   },

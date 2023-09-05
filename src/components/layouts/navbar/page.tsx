@@ -1,8 +1,33 @@
+"use client"
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { asset_home } from "../../assets/images";
+import { asset_home } from "../../../assets/images";
 
 const NavbarCompt = () => {
+
+	const [isScroll, setIsScroll] = useState(false)
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 300) {
+				setIsScroll(true)
+			} else {
+				setIsScroll(false)
+			}
+		}
+
+		console.log(handleScroll);
+
+
+		window.addEventListener("scroll", handleScroll)
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll)
+		}
+
+	}, [])
+
 
 	const navLinks = [
 		{
@@ -21,8 +46,9 @@ const NavbarCompt = () => {
 		}
 	]
 
+
 	return (
-		<nav className="bg-transparent fixed flex items-center w-full py-3 z-10">
+		<nav className={`fixed flex items-center w-full transition-all duration-1000 ease-in-out py-3 z-10  ${isScroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
 			<div className=" flex_center w-full px-14 ">
 				<Link href="/" className="">
 					<Image src={asset_home.logo} alt="logo" className="w-12" />
@@ -40,7 +66,7 @@ const NavbarCompt = () => {
 
 				<Link href={"/contact"} className="bg-red px-5 py-3 text-white font-normal uppercase text-[15px] tracking-widest">Contact</Link>
 			</div>
-		</nav>
+		</nav >
 	)
 }
 

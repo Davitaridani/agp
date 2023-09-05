@@ -57,7 +57,7 @@ const About = () => {
 						<div className="flex flex-row ">
 							{iconAbout.map((item, index) => (
 								<div className="md:basis-2/6 basis-full flex justify-center" key={index}>
-									<div className="text-center ">
+									<div className="text-center">
 										<Image src={item.icon} alt='icon' className='mx-auto w-12 mb-4' />
 										<p className='text-red text-2xl font-semibold'>{item.count}</p>
 										<h5 className='text-sm'>{item.text}</h5>

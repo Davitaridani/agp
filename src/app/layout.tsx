@@ -1,5 +1,5 @@
-import NavbarCompt from '@/components/navbar/page'
-import Footer from '@/components/footer/page'
+import NavbarCompt from '@/components/layouts/navbar/page'
+import Footer from '@/components/layouts/footer/page'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Lato } from "next/font/google";
