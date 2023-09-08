@@ -10,24 +10,18 @@ const NavbarCompt = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			if (window.scrollY > 300) {
+			if (window.scrollY > 200) {
 				setIsScroll(true)
 			} else {
 				setIsScroll(false)
 			}
 		}
-
-		console.log(handleScroll);
-
-
 		window.addEventListener("scroll", handleScroll)
-
 		return () => {
 			window.removeEventListener("scroll", handleScroll)
 		}
 
 	}, [])
-
 
 	const navLinks = [
 		{
@@ -46,12 +40,11 @@ const NavbarCompt = () => {
 		}
 	]
 
-
 	return (
-		<nav className={`fixed flex items-center w-full transition-all duration-1000 ease-in-out py-3 z-10  ${isScroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
-			<div className=" flex_center w-full px-14 ">
+		<nav className={`fixed flex items-center w-full transition-all duration-1000 ease-in-out py-3 z-10 ${isScroll ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+			<div className=" flex_center w-full px-14">
 				<Link href="/" className="">
-					<Image src={asset_home.logo} alt="logo" className="w-12" />
+					<Image src={asset_home.logo} alt="logo agp" className="w-12" />
 				</Link>
 
 				<div className="mx-auto">

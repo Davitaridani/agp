@@ -3,7 +3,6 @@
 import Image from "next/image";
 import styling from "../guide.module.css";
 import { dataProducts } from "../../../utils/constants";
-// import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 interface Category {
@@ -13,30 +12,10 @@ interface Category {
 	product: []
 }
 
-// export async function generateStaticParams() {
-// 	return dataProducts.map(item => ({
-// 		categorySlug: item.category,
-// 	}))
-// }
-
 const CategoryProduct = ({ params }: { params: Category }) => {
-
 	const { categorySlug } = params
 
-	console.log(categorySlug);
-
-
-	// console.log("Params =>", params);
-
 	const filterProducts = dataProducts.filter(dataProducts => dataProducts.category === categorySlug)
-
-
-
-
-	// console.log("Filter Data Products", filterProducts);
-
-
-	// const router = useRouter()
 
 	return (
 		<>
@@ -58,7 +37,6 @@ const CategoryProduct = ({ params }: { params: Category }) => {
 									<Image src={product.imgUrl} alt={product.title} className="w-full" />
 									<div className="mt-4">
 										<h5 className="font-semibold">{product.title}</h5>
-										{/* <button type="button" onClick={() => router.push(`/tech-guide/${item.category}/${product.id}`)} className="text-[13px] text-red capitalize">Read More</button> */}
 										<Link href={`/tech-guide/${item.category}/${product.id}`} className="text-[13px] text-red capitalize">Read More</Link>
 									</div>
 								</div>

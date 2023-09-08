@@ -12,7 +12,7 @@ const Products = () => {
 						{cardHome.map((item, i) => (
 							<div key={i} className="relative">
 								<Image src={item.imgUrl} alt="card products" className=" object-cover h-full" />
-								<Link href={"#"} className="absolute bottom-5 left-5 text-white text-lg lg:text-xl uppercase font-semibold ">{item.text}</Link>
+								<Link href={`/tech-guide/${item.category}`} className="absolute bottom-5 left-5 text-white text-lg lg:text-xl uppercase font-semibold ">{item.text}</Link>
 							</div>
 						))}
 					</div>

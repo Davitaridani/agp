@@ -1,0 +1,6 @@
+export {default as valves_1} from "./valves (1).jpg"
+export {default as valves_2} from "./valves (2).jpg"
+export {default as valves_3} from "./valves (3).jpg"
+export {default as valves_4} from "./valves (4).jpg"
+export {default as valves_5} from "./valves (5).jpg"
+export {default as valves_6} from "./valves (6).jpg"
