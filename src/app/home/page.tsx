@@ -26,12 +26,12 @@ const Home = () => {
 
 			<Products />
 
-			<GuideProduct bgColor="bg-red pt-0" />
+			<GuideProduct bgColor="bg-red pt-0 pb-0" />
 
-			<section className="bg-navy text-white overflow-hidden pt-28">
-				<div className="container-content2 ps-[8.5%] pe-0 me-auto ">
+			<section className="bg-navy text-white overflow-hidden lg:pt-28 py-20">
+				<div className="container-content2 lg:ps-[8.5%] lg:pe-0 me-auto ">
 					<div className="items__row">
-						<div className="basis-3/5">
+						<div className="basis-3/5 lg:mb-0 mb-[18rem] px-[20px] lg:px-0">
 							<div className="max-w-[45rem] mb-7">
 								<h3 className="mb-4">About AGP and the
 									<span className="block text-red">successful experience</span>
@@ -41,28 +41,25 @@ const Home = () => {
 									updated and be able to come up with comprehensive products that serve modern.</p>
 							</div>
 						</div>
-						<div className="basis-2/5 mx-auto relative flex justify-center mr-16">
+						<div className="basis-2/5 mx-auto relative flex justify-center lg:mr-16 mr-0 lg:bottom-auto bottom-[15.5rem] lg:left-auto left-10">
 							<div className="bg-red text-center w-60 mx-auto p-8 absolute justify-center flex-col bg-opacity-60">
-								<h5 className="uppercase tracking-widest text-base lg:mb-8 mb-6">AGP at a glance</h5>
+								<h5 className="uppercase tracking-widest lg:text-base text-[15px] lg:mb-8 mb-5">AGP at a glance</h5>
 								<div className="text-center">
-									<h4 className="text-3xl">10,000+</h4>
-									<p className="text-sm">Product  SKU Collection</p>
-									<hr className="my-6 w-8 mx-auto" />
-									<h4 className="text-3xl">200+</h4>
+									<h4 className="lg:text-3xl text-2xl">10,000+</h4>
+									<p className="text-sm">Product SKU Collection</p>
+									<hr className="lg:my-6 my-4 w-8 mx-auto" />
+									<h4 className="lg:text-3xl text-2xl">200+</h4>
 									<p className="text-sm">Implemented projects in Indonesia</p>
-									<hr className="my-6 w-8 mx-auto" />
-									<h4 className="text-3xl">5000+</h4>
+									<hr className="lg:my-6 my-4 w-8 mx-auto" />
+									<h4 className="lg:text-3xl text-2xl">5000+</h4>
 									<p className="text-sm">Satisfied customers</p>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div className="float-right">
-						<div className="">
-							<h1></h1>
-						</div>
-						<Image src={asset_home.coverHero} alt="Background About AGP" className="" />
+					<div className="lg:float-right">
+						<Image src={asset_home.coverHero} alt="Background About AGP" className="lg:h-auto h-64 object-cover" />
 					</div>
 				</div>
 			</section>
