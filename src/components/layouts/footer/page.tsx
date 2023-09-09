@@ -30,8 +30,8 @@ const Footer = () => {
 	return (
 		<footer className="bg-navy">
 			<div className="container text-gray">
-				<div className="flex flex-row pt-20 pb-10">
-					<div className="basis-1/4">
+				<div className="items__row lg:pt-20 pt-16 pb-10">
+					<div className="md:basis-1/4 basis-1/2 mb-4">
 						<Image src={asset_home.logo} alt="logo footer" className="w-12 h-12 mb-2" />
 						<p className="text-[15px] pe-8 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt maxime consequatur libero minima!</p>
 						<div className="flex_center gap-2 text-lg">
@@ -46,10 +46,10 @@ const Footer = () => {
 							</span>
 						</div>
 					</div>
-					{dataLink.map((item: any, i) => (
-						<div className="basis-1/4">
+					{dataLink.map((item: any, i: number) => (
+						<div className="lg:basis-1/4 basis-1/2 mb-4">
 							<h5 className="mb-2 text-xl text-white">{item.title}</h5>
-							<ul key={i} className="">
+							<ul key={i}>
 								{item.itemLinks.map((item: any) => (
 									<li className="flex_center mb-2" >
 										<Link href={`#`} className="text-sm hover:underline">{item.link}</Link>
@@ -58,7 +58,7 @@ const Footer = () => {
 							</ul>
 						</div>
 					))}
-					<div className="basis-1/4">
+					<div className="lg:basis-1/4 basis-1/2 mb-4">
 						<h5 className="mb-2 text-xl text-white">Contact</h5>
 						<ul>
 							<li className="mb-2">
@@ -83,7 +83,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<hr className="my-5 text-zinc-600" />
-				<p className="text-center text-sm pb-7">Copyright © 2023 All rights reserved | This website by Ahmat Davit</p>
+				<p className="text-center lg:text-sm text-xs pb-7">Copyright © 2023 All rights reserved | This website by Ahmat Davit</p>
 			</div>
 		</footer >
 	)

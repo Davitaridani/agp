@@ -5,7 +5,7 @@ import CategoryGuide from '@/components/CategoryGuide';
 const TechGuide = () => {
 	return (
 		<>
-			<section className={`${styling.bg_hero} flex`}>
+			<section className={`${styling.bg_hero} flex pb-0`}>
 				<div className="container flex_center justify-center">
 					<div className="text-center">
 						<p className='uppercase text-red'>TECHNICAL GUIDE & REFERENCE</p>
@@ -16,7 +16,7 @@ const TechGuide = () => {
 			</section>
 
 			<section className="lg:pb-28 pb-10 pt-0">
-				<div className="container_content  flex justify-center">
+				<div className="container_content lg:px-0 px-[20px] flex justify-center">
 					<CategoryGuide color="text-black" />
 				</div>
 			</section>
