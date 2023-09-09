@@ -20,8 +20,8 @@ const About = () => {
 
 			<section className='bg-darkBlue'>
 				<div className="container text-white">
-					<div className="flex flex-row justify-center gap-12">
-						<div className="basis-2/5">
+					<div className="items__row justify-center gap-12">
+						<div className="basis-2/5 mb-8 lg:mb-0">
 							<div className="">
 								<h3 className='font-light mb-4'>
 									<span className='font-semibold block'>Passion in what we do</span>
@@ -44,7 +44,7 @@ const About = () => {
 			</section>
 
 			<section >
-				<div className="container_content">
+				<div className="container_content lg:px-0 px-[20px]">
 					<div className="mb-8 w-auto md:w-9/12 mx-auto text-center">
 						<h3 className='text-red leading-[1.2] font-bold mb-8'>
 							<span className='block text-darkBlue font-normal'>The Right Partner In Supplies</span>
@@ -54,12 +54,12 @@ const About = () => {
 
 					<div className="items-center text-center">
 						<h5 className='uppercase mb-7 font-semibold'>AGP at a glance</h5>
-						<div className="flex flex-row ">
+						<div className="flex flex-row">
 							{iconAbout.map((item, index) => (
 								<div className="md:basis-2/6 basis-full flex justify-center" key={index}>
 									<div className="text-center">
-										<Image src={item.icon} alt='icon' className='mx-auto w-12 mb-4' />
-										<p className='text-red text-2xl font-semibold'>{item.count}</p>
+										<Image src={item.icon} alt='icon' className='mx-auto lg:w-12 w-9 lg:mb-4 mb-2' />
+										<p className='text-red lg:text-2xl text-xl font-semibold'>{item.count}</p>
 										<h5 className='text-sm'>{item.text}</h5>
 									</div>
 								</div>
@@ -70,17 +70,15 @@ const About = () => {
 			</section>
 
 			<section className={`${styling.bg_cover_about} flex items-center py-0`}>
-				<div className="container_content">
-					<h3 className="text-center text-white mb-8">AGP <span className='block text-red mt-1'>Vision & Mision
+				<div className="container_content lg:px-0 px-[20px]">
+					<h3 className="text-center text-white lg:mb-8 mb-5">AGP <span className='block text-red lg:mt-1'>Vision & Mision
 					</span></h3>
 					<div className="items__row justify-center gap-8 text-white text-center">
 						<div className="basis-1/2 ">
 							<h5 className='text-red text-xl mb-3 tracking-wider'>Vision</h5>
 							<p className=''>To become the leading company in Indonesia in the sales of pipes, valves, couplings, clutches, and related products, with a focus on offering the most comprehensive range of products and delivering the best service.</p>
 						</div>
-						<div className="md:border-r border-b border-gray">
-
-						</div>
+						<div className="md:border-r border-b border-gray lg:my-0 my-6" />
 						<div className="basis-1/2">
 							<h5 className='text-red text-xl mb-3 tracking-wider'>Mision</h5>
 							<p>To become the leading company in Indonesia in the sales of pipes, valves, couplings, clutches, and related products, with a focus on offering the most comprehensive range of products and delivering the best service. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat delectus incidunt numquam?</p>
