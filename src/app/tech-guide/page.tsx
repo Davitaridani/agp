@@ -1,7 +1,6 @@
 import styling from "./guide.module.css";
 import CategoryGuide from '@/components/CategoryGuide';
 
-
 const TechGuide = () => {
 	return (
 		<>
