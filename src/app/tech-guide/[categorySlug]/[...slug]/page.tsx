@@ -15,6 +15,7 @@ interface categoryProps {
 		title: string
 		price: number
 		type: string
+		imgUrl: string
 		description: string
 	}
 }
@@ -39,7 +40,7 @@ const DetailProductPage = ({ params }: { params: categoryProps }) => {
 					<div className="items__row gap-6">
 						<div className="basis-1/3">
 							<div className="relative ">
-								<Image src={filterProducts?.imgUrl} alt="product" className="h-full w-full lg:mb-0 mb-3" />
+								<Image src={`${filterProducts?.imgUrl}`} alt="product" className="h-full w-full lg:mb-0 mb-3" />
 							</div>
 						</div>
 						<div className="basis-2/3 lg:px-0 px-3">
