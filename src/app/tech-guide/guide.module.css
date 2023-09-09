@@ -3,3 +3,19 @@
   background-size: cover;
   height: 50vh;
 }
+
+.bg_hero_productDetail {
+  background: url("../../assets/images/guide/bg-cover.webp") center no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg_hero {
+    height: 40vh;
+  }
+
+  .bg_hero_productDetail {
+    height: 35vh;
+  }
+}

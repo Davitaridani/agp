@@ -4,6 +4,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Lato } from "next/font/google";
 import Cta from '@/components/UI/Cta';
+import Providers from '@/utils/providers';
+
 
 const lato = Lato({
   subsets: ['latin'],
@@ -24,10 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lato.className}>
-        <NavbarCompt />
-        {children}
-        <Cta />
-        <Footer />
+        <Providers>
+          <NavbarCompt />
+          {children}
+          <Cta />
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

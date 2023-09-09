@@ -45,9 +45,13 @@
 }
 
 .items__row {
-  @apply flex flex-row;
+  @apply lg:flex flex-row;
 }
 
 .flex_center {
   @apply flex items-center;
+}
+
+.card__custom {
+  @apply shadow-md;
 }

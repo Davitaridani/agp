@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/assets/images/product/index.ts", "src/assets/images/product/asahi/index.ts", "src/assets/images/product/pipe-standard/index.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/assets/images/product/index.ts", "src/assets/images/product/asahi/index.ts", "src/assets/images/product/pipe-standard/index.ts", "src/utils/constants.js"],
   "exclude": ["node_modules"]
 }

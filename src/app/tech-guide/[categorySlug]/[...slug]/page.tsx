@@ -20,20 +20,13 @@ interface categoryProps {
 }
 
 const DetailProductPage = ({ params }: { params: categoryProps }) => {
-
 	const { slug, categorySlug } = params
-
 	const result = dataProducts.find((item) => item.category === categorySlug)
-
 	if (!result) return <h1>Not Found</h1>
-
 	const filterProducts = result.product.find((item) => item.id == slug[0])
-
 	const resultFormatPrice = numeral(filterProducts?.price).format('0,0')
-
 	return (
 		<>
-
 			<section className={`${styling.bg_hero_productDetail} flex h-4 pb-0`}>
 				<div className="container flex_items_center">
 					<div className="item-center">
@@ -41,7 +34,6 @@ const DetailProductPage = ({ params }: { params: categoryProps }) => {
 					</div>
 				</div>
 			</section >
-
 			<section className="pt-0">
 				<div className="container_content lg:px-0 px-[20px]">
 					<div className="items__row gap-6">

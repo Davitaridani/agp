@@ -48,7 +48,7 @@ const Footer = () => {
 					</div>
 					{dataLink.map((item: any, i: number) => (
 						<div className="lg:basis-1/4 basis-1/2 mb-4">
-							<h5 className="mb-2 text-xl text-white">{item.title}</h5>
+							<h5 className="mb-2 lg:text-xl text-base text-white">{item.title}</h5>
 							<ul key={i}>
 								{item.itemLinks.map((item: any) => (
 									<li className="flex_center mb-2" >
@@ -59,7 +59,7 @@ const Footer = () => {
 						</div>
 					))}
 					<div className="lg:basis-1/4 basis-1/2 mb-4">
-						<h5 className="mb-2 text-xl text-white">Contact</h5>
+						<h5 className="mb-2 lg:text-xl text-base text-white">Contact</h5>
 						<ul>
 							<li className="mb-2">
 								<Link href={"#"} className="flex_center text-sm hover:underline">

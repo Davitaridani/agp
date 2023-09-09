@@ -1,6 +1,4 @@
 .bg_cover_cta {
   background: url("../../assets/images/home/bg-cover-cta.jpg") no-repeat center;
-
   background-size: cover;
-  height: 300px;
 }
